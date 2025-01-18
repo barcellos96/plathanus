@@ -1,6 +1,6 @@
 import { ChevronRight, Dot } from "lucide-react";
-import hero from "../../app/assets/hero_header.jpg";
-import specification from "../../app/assets/specification.png";
+import hero from "@/assets/hero_header.jpg";
+import specification from "@/assets/specification.png";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -24,7 +24,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-r from-[#FFFFFF] via-[#80276C33]" />
 
         {/* Conteúdo sobreposto */}
-        <div className="absolute inset-0 flex flex-col justify-between px-12 md:px-20 pt-6">
+        <div className="absolute inset-0 flex flex-col justify-between px-8 md:px-20 pt-6">
           {/* Breadcrumb no topo com margin-top */}
           <Breadcrumb>
             <BreadcrumbList className="flex items-center gap-2 text-[#4C4D4C] mt-6">

@@ -2,7 +2,7 @@
 
 import { Search } from "lucide-react";
 import Logo from "./logo";
-import ButtonsInformations from "./buttons";
+import Informations from "./information";
 
 export default function MenuDesktop() {
   const menuItems = [
@@ -35,7 +35,7 @@ export default function MenuDesktop() {
             </div>
           </ul>
         </nav>
-        <ButtonsInformations hidden="hidden lg:flex" />
+        <Informations hidden="hidden lg:flex" />
       </div>
     </header>
   );

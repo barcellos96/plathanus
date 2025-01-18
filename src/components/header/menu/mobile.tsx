@@ -1,8 +1,6 @@
 "use client";
 
-import { ChevronDown, Menu, Search } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import flag_brazil from "../../../app/assets/flag_brazil.png";
+import { Menu, Search } from "lucide-react";
 import {
   SheetContent,
   Sheet,
@@ -12,7 +10,7 @@ import {
   SheetHeader,
 } from "@/components/ui/sheet";
 import Logo from "./logo";
-import ButtonsInformations from "./buttons";
+import Informations from "./information";
 
 export default function MenuMobile() {
   const menuItems = [
@@ -61,7 +59,7 @@ export default function MenuMobile() {
                 </ul>
               </nav>
 
-              <ButtonsInformations hidden="flex lg:hidden" />
+              <Informations hidden="flex lg:hidden" />
             </SheetContent>
           </Sheet>
         </div>
