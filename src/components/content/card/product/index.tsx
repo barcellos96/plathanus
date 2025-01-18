@@ -2,6 +2,7 @@ import React from "react";
 import { Download, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ProductGrid from "./product-grid";
+import { PaginationDemo } from "./pagination";
 
 const Products = () => {
   return (
@@ -19,6 +20,7 @@ const Products = () => {
         </Button>
       </div>
       <ProductGrid />
+      <PaginationDemo />
     </div>
   );
 };

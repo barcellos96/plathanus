@@ -1,13 +1,12 @@
 import { CardFamily } from "@/components/content/card/family/family-card";
 import Products from "@/components/content/card/product";
 import Filters from "@/components/content/filters";
-import Header from "@/components/header";
+import DefaultPage from "@/components/defaultPage";
 import Hero from "@/components/header/hero";
 
 export default function Home() {
   return (
-    <div>
-      <Header />
+    <DefaultPage>
       <Hero />
       <div className="mx-8 md:mx-20 border-b border-[#EBEBEB]">
         <CardFamily />
@@ -16,6 +15,6 @@ export default function Home() {
         <Filters />
         <Products />
       </div>
-    </div>
+    </DefaultPage>
   );
 }
