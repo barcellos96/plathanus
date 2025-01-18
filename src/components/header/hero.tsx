@@ -1,4 +1,4 @@
-import { ChevronRight } from "lucide-react";
+import { ChevronRight, Dot } from "lucide-react";
 import hero from "../../app/assets/hero_header.jpg";
 import specification from "../../app/assets/specification.png";
 import {
@@ -24,7 +24,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-r from-[#FFFFFF] via-[#80276C33]" />
 
         {/* Conteúdo sobreposto */}
-        <div className="absolute inset-0 flex flex-col justify-between pl-12 md:pl-20 pt-6">
+        <div className="absolute inset-0 flex flex-col justify-between px-12 md:px-20 pt-6">
           {/* Breadcrumb no topo com margin-top */}
           <Breadcrumb>
             <BreadcrumbList className="flex items-center gap-2 text-[#4C4D4C] mt-6">
@@ -45,12 +45,18 @@ export default function Hero() {
           </Breadcrumb>
 
           {/* Marca de especificação centralizada */}
-          <div className="flex items-center h-full">
+          <div className="flex flex-col justify-center gap-2 h-full px-4">
             <img
               src={specification.src}
               alt="specification mark"
-              className="w-[628px] h-[203px]"
+              className="w-full max-w-[492px] h-[75px]"
             />
+            <span className="flex gap-2 text-2xl max-w-[628px]">
+              <Dot strokeWidth={12} className="hidden md:block" />
+              Produtos desenvolvidos para auxiliar na prevenção e retorno das
+              atividades, no tratamento e recuperação de pacientes com lesões
+              ortopédicas. s
+            </span>
           </div>
         </div>
       </div>
