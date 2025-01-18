@@ -21,7 +21,7 @@ export default function Hero() {
         />
         {/* Gradiente linear sobre a imagem */}
         <div className="absolute inset-0 bg-[#80276C33] " />
-        <div className="absolute inset-0 bg-gradient-to-l from-[#80276C33] to-white" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#FFFFFF] via-[#80276C33]" />
 
         {/* Conteúdo sobreposto */}
         <div className="absolute inset-0 flex flex-col justify-between pl-12 md:pl-20 pt-6">
