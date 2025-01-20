@@ -14,7 +14,7 @@ export default function MenuDesktop() {
 
   return (
     <header className="w-full ">
-      <div className="container mx-auto flex justify-between items-center px-40">
+      <div className="px-20 xl:px-20  container mx-auto flex justify-between items-center">
         <Logo hidden="hidden lg:block" />
         {/* Menu Desktop */}
         <nav className="hidden lg:flex items-center">

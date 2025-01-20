@@ -4,9 +4,10 @@ import Footer from "../footer";
 
 export default function DefaultPage({ children }: React.PropsWithChildren) {
   return (
-    <div>
+    <div className="flex flex-col min-h-screen">
       <Header />
-      {children}
+      {/* ocupar o espaço disponível entre */}
+      <main className="flex-grow">{children}</main>
       <Footer />
     </div>
   );

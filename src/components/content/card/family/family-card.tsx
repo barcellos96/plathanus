@@ -9,7 +9,7 @@ import FamilyNav from "./family-nav";
 
 export function CardFamily() {
   return (
-    <Card className="max-w-[814px] border-none shadow-none outline-none">
+    <Card className=" max-w-[814px] border-none shadow-none outline-none">
       <CardHeader>
         <CardTitle className="text-[#4C4D4C] max-w-[360px] font-[500] leading-8">
           Conheça as{" "}

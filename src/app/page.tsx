@@ -8,10 +8,10 @@ export default function Home() {
   return (
     <DefaultPage>
       <Hero />
-      <div className="mx-8 md:mx-20 border-b border-[#EBEBEB]">
+      <div className="mx-8 md:px-14 xl:px-32 border-b border-[#EBEBEB]">
         <CardFamily />
       </div>
-      <div className="mx-8 md:mx-28 flex flex-col md:flex-row justify-between gap-4 mt-10">
+      <div className="mx-8 md:px-20 xl:px-36 flex flex-col md:flex-row justify-between gap-4 mt-10">
         <Filters />
         <Products />
       </div>

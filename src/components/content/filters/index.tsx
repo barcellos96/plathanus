@@ -1,5 +1,5 @@
 import { ChevronDown } from "lucide-react";
-import { filters } from "../data";
+import { filters } from "../../data/mock";
 
 export default function Filters() {
   return (

@@ -24,7 +24,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-r from-[#FFFFFF] via-[#80276C33]" />
 
         {/* Conteúdo sobreposto */}
-        <div className="absolute inset-0 flex flex-col justify-between px-8 md:px-20 pt-6">
+        <div className="absolute inset-0 flex flex-col justify-between px-8 md:px-20 xl:px-40 pt-6">
           {/* Breadcrumb no topo com margin-top */}
           <Breadcrumb>
             <BreadcrumbList className="flex items-center gap-2 text-[#4C4D4C] mt-6">

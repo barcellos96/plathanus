@@ -1,4 +1,4 @@
-import { family } from "../../data";
+import { family } from "../../../data/mock";
 
 export default function FamilyNav() {
   return (

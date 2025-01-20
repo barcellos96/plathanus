@@ -140,15 +140,16 @@ export default function Footer() {
       </div>
 
       <div className="flex items-center px-20 mt-4 py-6 border-t border-[#707372]">
-        <div className="flex items-center justify-between w-full">
+        <div className="flex flex-col gap-4 md:flex-row items-center justify-between w-full">
           <div className="flex text-sm gap-1 items-center hover:cursor-pointer">
             Selecionar País{" "}
             <img src={flag_brazil.src} alt="Bandeira do Brasil" />
             <ChevronDown strokeWidth={1.2} />
           </div>
 
-          <p className="text-sm text-end">
-            &copy; 2023 Lorem Ipsum. Todos os direitos reservados. <br />
+          <p className="text-sm text-center md:text-end ">
+            &copy; 2023 Lorem Ipsum. Todos os direitos reservados. <br />{" "}
+            <br className="sm:hidden" />
             Av dos Búzios, 150 - Florianópolis - SC - Brasil
           </p>
         </div>

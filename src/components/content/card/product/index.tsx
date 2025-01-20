@@ -7,7 +7,7 @@ import { PaginationDemo } from "./pagination";
 const Products = () => {
   return (
     <div className="w-full mt-10 md:mt-0 ">
-      <div className="flex justify-between items-center mb-6 px-4 ">
+      <div className="flex justify-between items-center mb-6 px-10">
         <div className="flex gap-4 items-center ">
           <span className="font-bold bg-zinc-50 px-2 py-1">86 produtos</span>
           <div className="flex items-center cursor-pointer bg-[#F8F8F8] rounded-full h-8 w-8 p-2">
