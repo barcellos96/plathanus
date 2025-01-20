@@ -10,25 +10,25 @@ Este projeto foi desenvolvido como parte do desafio de criação de uma página 
 
 #### Além dos requisitos solicitados, as seguintes funcionalidades adicionais foram implementadas:
 
-- `Filtro de Produtos:` Permite que o usuário filtre os produtos de forma dinâmica.
+- `Filtro de Produtos:` Na parte de catalogo dos produtos, permite que o usuário filtre os produtos a partir de suas "familias" de forma dinâmica utilizando dados mockados.
 
-- `Zoom nas Imagens:` Função de zoom para aprimorar a visualização dos produtos.
+- `Zoom nas Imagens:` Na pagina do produto, na imagem principal, a função de zoom para aprimorar a visualização dos produtos.
 
-- `Vídeo Funcional:` Reprodução de vídeos diretamente na página.
+- `Vídeo Funcional:` Foi adicionado um video mockado para representar a reprodução de vídeos diretamente na página.
 
-- `Troca de Imagens na Página de Produto:` As imagens mudam de forma dinâmica conforme a interação do usuário.
+- `Troca de Imagens na Página de Produto:` As imagens mudam de forma dinâmica conforme a interação do usuário na pagina do produto selecionado
 
-- `Nomes Dinâmicos:` O nome dos produtos é gerado dinamicamente.
+- `Nomes Dinâmicos:` Os nomes dos produtos é gerado dinamicamente através dos dados mockados
 
-- `Imagens Dinâmicas:` As imagens são carregadas de forma dinâmica com base nos produtos.
+- `Imagens Dinâmicas:` As imagens são carregadas de forma dinâmica com base nos produtos em todo sistema
 
-- `Accordion Funcional:` Elementos expansíveis para exibição de informações adicionais.
+- `Accordion Funcional:` Elementos expansíveis para exibição de informações adicionais (FAQ).
 
 - `Scroll Funcional de "Conheça Mais Produtos":` Scroll suave para navegação entre os produtos.
 
 - `Ícones de Redes Sociais:` Direcionamento funcional para as redes sociais da Plathanus.
 
-- `Práticas de SEO:` Implementação de boas práticas de SEO para otimização de buscas.
+- `Práticas de SEO:` Implementação de boas práticas de SEO para otimização de buscas através de Metadados.
 
 #### Funcionalidades Solicitadas
 
