@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Teste de Desenvolvimento de Página Web Responsiva com Versão Mobile
 
-## Getting Started
+- Descrição do Projeto
 
-First, run the development server:
+Este projeto foi desenvolvido como parte do desafio de criação de uma página web responsiva baseada no layout fornecido no Figma. O objetivo principal foi criar um layout responsivo e adaptar o design para dispositivos móveis, garantindo uma experiência de navegação otimizada em diferentes tamanhos de tela.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Funcionalidades Implementadas
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### Funcionalidades Extras
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+#### Além dos requisitos solicitados, as seguintes funcionalidades adicionais foram implementadas:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `Filtro de Produtos:` Permite que o usuário filtre os produtos de forma dinâmica.
 
-## Learn More
+- `Zoom nas Imagens:` Função de zoom para aprimorar a visualização dos produtos.
 
-To learn more about Next.js, take a look at the following resources:
+- `Vídeo Funcional:` Reprodução de vídeos diretamente na página.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `Troca de Imagens na Página de Produto:` As imagens mudam de forma dinâmica conforme a interação do usuário.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `Nomes Dinâmicos:` O nome dos produtos é gerado dinamicamente.
 
-## Deploy on Vercel
+- `Imagens Dinâmicas:` As imagens são carregadas de forma dinâmica com base nos produtos.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `Accordion Funcional:` Elementos expansíveis para exibição de informações adicionais.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `Scroll Funcional de "Conheça Mais Produtos":` Scroll suave para navegação entre os produtos.
+
+- `Ícones de Redes Sociais:` Direcionamento funcional para as redes sociais da Plathanus.
+
+- `Práticas de SEO:` Implementação de boas práticas de SEO para otimização de buscas.
+
+#### Funcionalidades Solicitadas
+
+- Layout responsivo conforme especificado, ajustando-se perfeitamente a diferentes tamanhos de tela.
+
+- Versão mobile criada a partir do layout desktop, com reorganização otimizando a experiência em dispositivos menores.
+
+- Menu responsivo adaptado para dispositivos móveis ("hamburger menu").
+
+- Tecnologias e Ferramentas Utilizadas
+
+#### Frontend:
+
+- React.js com Next.js
+
+- Tailwind CSS
+
+- Shadcn para componentes específicos
+
+#### Deploy:
+
+- Realizado na plataforma Vercel
+
+- Link para acesso: https://plathanus.vercel.app/
+
+### Como Visualizar o Projeto
+
+Clone o repositório do projeto para sua máquina.
+
+Instale as dependências utilizando npm install ou yarn.
+
+Execute o projeto localmente com npm run dev ou yarn dev.
+
+Acesse o link do deploy para visualizar a aplicação em produção: https://plathanus.vercel.app/.
+
+Link do Design no Figma: https://www.figma.com/design/Be4AkXYkmygw6LxaCPOwE2/Teste-E-commerce?node-id=0-1&p=f&t=GS9Rhtcqefm8tzOj-0
+
+#### O layout original pode ser acessado no seguinte link: Figma Layout Teste E-commerce.
+
+### Critérios Atendidos
+
+- `Responsividade:` A página foi ajustada para se comportar bem em dispositivos desktop, tablets e smartphones.
+
+- `Criação do Layout Mobile:` Foi desenvolvido um layout mobile fluido, intuitivo e esteticamente alinhado ao design desktop.
+
+- `Usabilidade:` O design responsivo garante uma navegação fácil, tanto em dispositivos grandes quanto pequenos.
+
+- `Fidelidade ao Design:` O layout desktop segue fielmente o design do Figma, enquanto a versão mobile foi adaptada mantendo a consistência visual.
+
+- `Código Bem Estruturado:` O código está organizado, limpo e segue boas práticas de desenvolvimento.
+
+- `Performance:` A aplicação foi otimizada para garantir um carregamento rápido, especialmente em dispositivos móveis.
+
+## Agradeço a oportunidade de realizar este desafio. Estou aberto a feedbacks para melhorar ainda mais!
