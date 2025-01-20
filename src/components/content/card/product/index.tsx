@@ -1,12 +1,12 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, Suspense } from "react"; // Adicionando Suspense
 import { Download, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { PaginationDemo } from "./pagination";
 import { products } from "@/components/data/mock";
 import ProductCard from "./product-card";
-import { useSearchParams } from "next/navigation"; // Alterando para useSearchParams
+import { useSearchParams } from "next/navigation";
 
 const Products = () => {
   const [selectedFamilyIds, setSelectedFamilyIds] = useState<number[]>([]);
@@ -52,4 +52,12 @@ const Products = () => {
   );
 };
 
-export default Products;
+const SuspendedProducts = () => {
+  return (
+    <Suspense fallback={<div>Carregando...</div>}>
+      <Products />
+    </Suspense>
+  );
+};
+
+export default SuspendedProducts;
