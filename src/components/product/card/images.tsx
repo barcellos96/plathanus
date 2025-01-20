@@ -51,7 +51,6 @@ export default function ProductGallery({ images, isNew }: Props) {
 
   return (
     <div className="w-full max-w-4xl mx-auto">
-      {/* Main Image Container */}
       <div className="relative">
         <div
           className={`${
@@ -79,7 +78,6 @@ export default function ProductGallery({ images, isNew }: Props) {
             </span>
           )}
 
-          {/* Zoom Button */}
           <button
             onClick={toggleZoom}
             className="absolute bottom-4 right-4 bg-zinc-500 bg-opacity-60 p-1 rounded-lg shadow-lg hover:bg-zinc-400 transition-colors"
@@ -93,7 +91,6 @@ export default function ProductGallery({ images, isNew }: Props) {
         </div>
       </div>
 
-      {/* Thumbnail Navigation Container with Arrows */}
       <div className="mt-4 flex items-center gap-4">
         <ChevronLeft
           size={30}

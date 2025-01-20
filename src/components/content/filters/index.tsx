@@ -52,7 +52,6 @@ export default function Filters() {
           >
             Filtros
           </span>
-          {/* Tags dos filtros selecionados */}
           <div
             className={`${
               selectedFamilies.length === 0 && "hidden"

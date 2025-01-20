@@ -29,7 +29,7 @@ interface ProductProps {
 }
 export default function Product({ product }: ProductProps) {
   return (
-    <div className="px-6 md:px-20 xl:px-40">
+    <div className="mt-28 px-6 md:px-20 xl:px-40">
       <BreadcrumbComp name={product.name} />
 
       <div className="flex flex-col gap-8 mt-10 2xl:flex-row">

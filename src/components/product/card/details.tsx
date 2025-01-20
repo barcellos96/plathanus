@@ -46,7 +46,6 @@ export default function CardDetails({ details }: Props) {
       <div className="border border-[#AEB7B9]" />
 
       <div className="py-8 space-y-4">
-        {/* colors */}
         <div className="flex items-center gap-2">
           Cores disponíveis:
           <span className="flex items-center gap-2 text-[#4C4D4C]">
@@ -55,13 +54,11 @@ export default function CardDetails({ details }: Props) {
           </span>
         </div>
 
-        {/* models */}
         <div>
           <span>Modelo:</span>
           <span className="text-[#4C4D4C]"> Bilateral</span>
         </div>
 
-        {/* tam */}
         <div className="flex gap-2 ">
           <span>Tamanhos disponíveis:</span>
           <span className="px-2 bg-[#EBEBEB] text-[#4C4D4C] rounded">
@@ -72,7 +69,6 @@ export default function CardDetails({ details }: Props) {
           </span>
         </div>
 
-        {/* measure */}
         <div className="flex gap-4 ">
           <span className="flex text-[#E57200] gap-1 items-center px-2 hover:cursor-pointer hover:underline hover:underline-offset-4">
             <MoveDiagonal2 size={20} /> Descubra o seu tamanho ideal

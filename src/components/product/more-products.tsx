@@ -45,7 +45,6 @@ export default function MoreProducts({ products, product }: Props) {
         <span className=" max-w-[340px] text-[#4C4D4C] text-[32px]">
           Conheça também nossos outros produtos
         </span>
-        {/* Botão Previous */}
         <div className="flex gap-4">
           <ChevronLeft
             strokeWidth={1}
@@ -57,8 +56,6 @@ export default function MoreProducts({ products, product }: Props) {
                 : " text-[#4C4D4C] bg-white cursor-pointer"
             }`}
           />
-
-          {/* Botão Next */}
           <ChevronRight
             strokeWidth={1}
             size={40}

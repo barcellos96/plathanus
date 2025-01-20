@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState, Suspense } from "react"; // Adicionando Suspense
+import React, { useEffect, useState, Suspense } from "react";
 import { Download, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { PaginationDemo } from "./pagination";

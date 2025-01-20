@@ -25,7 +25,6 @@ export default function MenuMobile() {
       <div className="container mx-auto flex justify-between items-center px-10">
         <Logo hidden="lg:hidden" />
 
-        {/* Menu Mobile */}
         <div className="lg:hidden">
           <Sheet>
             <SheetTrigger asChild>
