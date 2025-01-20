@@ -1,6 +1,12 @@
 "use client";
 
-import { ChevronLeft, ChevronRight, ZoomIn, ZoomOut } from "lucide-react";
+import {
+  ChevronLeft,
+  ChevronRight,
+  Download,
+  ZoomIn,
+  ZoomOut,
+} from "lucide-react";
 import { ProductImage } from "..";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -122,6 +128,10 @@ export default function ProductGallery({ images }: Props) {
           }`}
         />
       </div>
+
+      <span className="mt-4 flex items-center gap-2 hover:underline hover:underline-offset-4 hover:cursor-pointer text-[#E57200]">
+        Baixar Folder do Produto <Download size={16} />
+      </span>
     </div>
   );
 }
