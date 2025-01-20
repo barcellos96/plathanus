@@ -4,13 +4,12 @@ import React from "react";
 import { Download, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { PaginationDemo } from "./pagination";
-import { useSearchParams } from "next/navigation";
 import { products } from "@/components/data/mock";
 import ProductCard from "./product-card";
 
 const Products = () => {
-  const searchParams = useSearchParams();
-  const familyIdsParam = searchParams.get("families");
+  const params = new URLSearchParams();
+  const familyIdsParam = params.get("families");
   const selectedFamilyIds = familyIdsParam
     ? familyIdsParam.split(",").map(Number)
     : [];
