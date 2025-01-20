@@ -17,7 +17,7 @@ const ProductGrid = () => {
         >
           <CardHeader className="relative p-0 border rounded-lg">
             <img
-              src={product.image?.src}
+              src={product.image[0]?.src}
               alt={product.name}
               className="w-[300px] h-[338px] object-cover shadow-sm hover:scale-[1.02] transition-transform duration-300 hover:cursor-pointer rounded-lg"
               onClick={() => push(`${product.name}?id=${product.id}`)}

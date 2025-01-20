@@ -13,7 +13,7 @@ export interface ProductImage {
 export interface Product {
   code: string;
   id: string;
-  image: ProductImage;
+  image: ProductImage[];
   isNew: boolean;
   name: string;
 }
@@ -27,7 +27,7 @@ export default function Product({ product }: ProductProps) {
       <BreadcrumbComp name={product.name} />
 
       <div className="flex gap-6">
-        <CardImages image={product.image} />
+        <CardImages images={product.image} />
         <CardDetails details={product} />
       </div>
     </div>
