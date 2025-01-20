@@ -1,20 +1,29 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Download, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { PaginationDemo } from "./pagination";
 import { products } from "@/components/data/mock";
 import ProductCard from "./product-card";
+import { useSearchParams } from "next/navigation"; // Alterando para useSearchParams
 
 const Products = () => {
-  const params = new URLSearchParams();
-  const familyIdsParam = params.get("families");
-  const selectedFamilyIds = familyIdsParam
-    ? familyIdsParam.split(",").map(Number)
-    : [];
+  const [selectedFamilyIds, setSelectedFamilyIds] = useState<number[]>([]);
 
-  // Filtra os produtos pela família selecionada
+  const searchParams = useSearchParams(); // Captura os parâmetros da query
+  const familiesParam = searchParams.get("families"); // Obtém o valor de "families" na query string
+
+  useEffect(() => {
+    if (familiesParam) {
+      const newSelectedFamilyIds = familiesParam.split(",").map(Number);
+      setSelectedFamilyIds(newSelectedFamilyIds);
+    } else {
+      // Se não houver parâmetro de filtro, reseta o estado
+      setSelectedFamilyIds([]);
+    }
+  }, [familiesParam]); // Reage a mudanças no parâmetro de query
+
   const filteredProducts = selectedFamilyIds.length
     ? products.filter((product) => selectedFamilyIds.includes(product.familyId))
     : products;
