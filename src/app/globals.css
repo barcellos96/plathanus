@@ -70,3 +70,28 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+/* Estilo para navegadores baseados em WebKit (Chrome, Edge, Safari, etc.) */
+::-webkit-scrollbar {
+  height: 8px; /* Altura da scrollbar horizontal */
+  width: 8px; /* Largura da scrollbar vertical */
+}
+
+::-webkit-scrollbar-track {
+  background: #f3f4f6; /* Cor do fundo da scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a3a3a3; /* Cor do polegar da scrollbar */
+  border-radius: 4px; /* Borda arredondada */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #71717a; /* Cor ao passar o mouse */
+}
+
+/* Estilo para navegadores modernos com suporte a scrollbar-gutter */
+.scrollbar-thin {
+  scrollbar-width: thin; /* Espessura fina (Firefox) */
+  scrollbar-color: #a3a3a3 #f3f4f6; /* Cores do polegar e do fundo */
+}

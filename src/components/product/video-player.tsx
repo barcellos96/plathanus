@@ -1,6 +1,6 @@
 "use client";
 
-import { Pause, Play } from "lucide-react";
+import { Play } from "lucide-react";
 import { useRef, useState } from "react";
 import { ProductImage } from ".";
 
@@ -32,7 +32,7 @@ const VideoPlayer = ({ thumbnailUrl }: Props) => {
   return (
     <div className="relative w-full">
       {/* Container do vídeo com aspect ratio 16:9 */}
-      <div className="relative w-full pt-[40.25%]" onClick={handleVideoPlay}>
+      <div className="relative w-full pt-[45.25%]" onClick={handleVideoPlay}>
         {isPlaying ? (
           // Renderiza o iframe do YouTube quando está em reprodução
           <iframe
@@ -41,7 +41,7 @@ const VideoPlayer = ({ thumbnailUrl }: Props) => {
             allow="autoplay; encrypted-media"
           ></iframe>
         ) : (
-          // Renderiza a thumbnail quando o vídeo está pausado
+          // Renderiza a thumbnail quando carrega a pagina
           <img
             src={thumbnailUrl.src}
             alt="Video Thumbnail"
@@ -58,11 +58,7 @@ const VideoPlayer = ({ thumbnailUrl }: Props) => {
                        flex items-center justify-center
                        transition-transform hover:scale-110"
           >
-            {isPlaying ? (
-              <Pause className="w-8 h-8 text-[#EC933A] bg-[#EC933A]" />
-            ) : (
-              <Play className="w-10 h-10 text-[#EC933A] ml-1" fill="#EC933A" />
-            )}
+            <Play className="w-10 h-10 text-[#EC933A] ml-1" fill="#EC933A" />
           </button>
         )}
       </div>

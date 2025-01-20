@@ -13,7 +13,7 @@ export default function CardDetails({ details }: Props) {
         Hidrolight Neo
         <sup className=" text-xs ml-0.5">®</sup>
       </span>
-      <h1 className="w-max inline-block capitalize bg-[#80276C] text-5xl text-white font-semibold p-2 rounded">
+      <h1 className="lg:w-max capitalize bg-[#80276C] text-5xl text-white font-semibold p-3 rounded-md">
         {details.name}
       </h1>
       <span className="text-[#707372] py-4">

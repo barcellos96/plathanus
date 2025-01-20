@@ -31,7 +31,6 @@ export async function generateMetadata({
 export default async function ProductPage({ searchParams }: ProdutoPageProps) {
   const { id } = await searchParams;
   const product = products.find((p) => p.id === id);
-  console.log("product", product);
   if (!product) {
     return (
       <DefaultPage>
@@ -43,8 +42,6 @@ export default async function ProductPage({ searchParams }: ProdutoPageProps) {
   return (
     <DefaultPage>
       <Product product={product} />
-      <h1>Produto: {product.name}</h1>
-      <p>Code: {product.code}</p>
     </DefaultPage>
   );
 }

@@ -2,18 +2,21 @@
 
 import React from "react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { products } from "../../../data/mock";
 import { useRouter } from "next/navigation";
+import { Product } from "@/components/product";
+interface Props {
+  products: Product[];
+}
 
-const ProductGrid = () => {
+const ProductGrid = ({ products }: Props) => {
   const { push } = useRouter();
 
   return (
-    <div className="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-6 w-full justify-items-center">
+    <>
       {products.map((product, index) => (
         <Card
           key={index}
-          className="h-[398px] w-[300px] border-none shadow-none"
+          className="h-[398px] min-w-[300px] border-none shadow-none"
         >
           <CardHeader className="relative p-0 border rounded-lg">
             <img
@@ -41,7 +44,7 @@ const ProductGrid = () => {
           </CardContent>
         </Card>
       ))}
-    </div>
+    </>
   );
 };
 

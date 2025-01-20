@@ -3,6 +3,7 @@ import { Download, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ProductGrid from "./product-grid";
 import { PaginationDemo } from "./pagination";
+import { products } from "../../../data/mock";
 
 const Products = () => {
   return (
@@ -19,7 +20,9 @@ const Products = () => {
           <Download className="-mt-1" />
         </Button>
       </div>
-      <ProductGrid />
+      <div className="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-6 w-full justify-items-center">
+        <ProductGrid products={products} />
+      </div>
       <PaginationDemo />
     </div>
   );
