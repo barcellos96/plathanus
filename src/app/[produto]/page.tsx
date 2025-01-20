@@ -3,7 +3,6 @@ import DefaultPage from "@/components/defaultPage";
 import Product from "@/components/product";
 import { Metadata } from "next";
 
-//Tipagem através da documentação do nextjs
 interface Props {
   params: Promise<{ produto: string }>;
   searchParams: Promise<{ [key: string]: string | string[] | undefined }>;

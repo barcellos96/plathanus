@@ -34,14 +34,12 @@ const VideoPlayer = ({ thumbnailUrl }: Props) => {
       {/* Container do vídeo com aspect ratio 16:9 */}
       <div className="relative w-full pt-[45.25%]" onClick={handleVideoPlay}>
         {isPlaying ? (
-          // Renderiza o iframe do YouTube quando está em reprodução
           <iframe
             src="https://www.youtube.com/embed/MEH8Q-DLjTg?autoplay=1&rel=0&showinfo=0"
             className="absolute top-0 left-0 w-full h-full object-cover rounded-lg"
             allow="autoplay; encrypted-media"
           ></iframe>
         ) : (
-          // Renderiza a thumbnail quando carrega a pagina
           <img
             src={thumbnailUrl.src}
             alt="Video Thumbnail"
@@ -49,7 +47,6 @@ const VideoPlayer = ({ thumbnailUrl }: Props) => {
           />
         )}
 
-        {/* Botão de play customizado */}
         {showControls && (
           <button
             onClick={togglePlay}

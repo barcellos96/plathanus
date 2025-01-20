@@ -67,19 +67,3 @@ Acesse o link do deploy para visualizar a aplicação em produção: https://pla
 Link do Design no Figma: https://www.figma.com/design/Be4AkXYkmygw6LxaCPOwE2/Teste-E-commerce?node-id=0-1&p=f&t=GS9Rhtcqefm8tzOj-0
 
 #### O layout original pode ser acessado no seguinte link: Figma Layout Teste E-commerce.
-
-### Critérios Atendidos
-
-- `Responsividade:` A página foi ajustada para se comportar bem em dispositivos desktop, tablets e smartphones.
-
-- `Criação do Layout Mobile:` Foi desenvolvido um layout mobile fluido, intuitivo e esteticamente alinhado ao design desktop.
-
-- `Usabilidade:` O design responsivo garante uma navegação fácil, tanto em dispositivos grandes quanto pequenos.
-
-- `Fidelidade ao Design:` O layout desktop segue fielmente o design do Figma, enquanto a versão mobile foi adaptada mantendo a consistência visual.
-
-- `Código Bem Estruturado:` O código está organizado, limpo e segue boas práticas de desenvolvimento.
-
-- `Performance:` A aplicação foi otimizada para garantir um carregamento rápido, especialmente em dispositivos móveis.
-
-## Agradeço a oportunidade de realizar este desafio. Estou aberto a feedbacks para melhorar ainda mais!

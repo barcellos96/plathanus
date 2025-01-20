@@ -13,7 +13,6 @@ interface Props {
 export default function MoreProducts({ products, product }: Props) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  // Referência para o contêiner que possui overflow
   const containerRef = useRef<HTMLDivElement>(null);
 
   const filteredProducts = products.filter((item) => item.id !== product.id);
@@ -21,25 +20,23 @@ export default function MoreProducts({ products, product }: Props) {
   const isFirstImage = currentImageIndex === 0;
   const isLastImage = currentImageIndex === products.length - 1;
 
-  // Função para rolar o conteúdo para a esquerda
   const handlePrevious = () => {
     if (!isFirstImage) {
       setCurrentImageIndex((prev) => prev - 1);
     }
     containerRef.current?.scrollBy({
-      left: -300, // Ajuste o valor para a quantidade de rolagem desejada
-      behavior: "smooth", // Animação suave
+      left: -300,
+      behavior: "smooth",
     });
   };
 
-  // Função para rolar o conteúdo para a direita
   const handleNext = () => {
     if (!isLastImage) {
       setCurrentImageIndex((prev) => prev + 1);
     }
     containerRef.current?.scrollBy({
-      left: 300, // Ajuste o valor para a quantidade de rolagem desejada
-      behavior: "smooth", // Animação suave
+      left: 300,
+      behavior: "smooth",
     });
   };
   return (

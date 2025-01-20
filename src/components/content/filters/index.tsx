@@ -13,11 +13,10 @@ export default function Filters() {
   };
 
   const handleCheckboxChange = (familyId: number) => {
-    setSelectedFamilies(
-      (prev) =>
-        prev.includes(familyId)
-          ? prev.filter((id) => id !== familyId)
-          : [...prev, familyId] // Adiciona o ID se não estiver
+    setSelectedFamilies((prev) =>
+      prev.includes(familyId)
+        ? prev.filter((id) => id !== familyId)
+        : [...prev, familyId]
     );
   };
 
@@ -25,7 +24,6 @@ export default function Filters() {
     setSelectedFamilies((prev) => prev.filter((id) => id !== familyId));
   };
 
-  // Atualiza os parâmetros da URL quando `selectedFamilies` mudar
   useEffect(() => {
     const params = new URLSearchParams();
 
@@ -33,12 +31,10 @@ export default function Filters() {
       params.set("families", selectedFamilies.join(","));
     }
 
-    // Atualizar a URL sem recarregar a página
     const newUrl = `${window.location.pathname}?${params.toString()}`;
     window.history.replaceState(null, "", newUrl);
   }, [selectedFamilies]);
 
-  // Obtém os nomes das famílias selecionadas
   const selectedFamilyNames = filters
     .flatMap((filter) => filter.family || [])
     .filter((item) => selectedFamilies.includes(item.id));

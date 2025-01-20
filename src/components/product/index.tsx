@@ -11,7 +11,7 @@ export interface ProductImage {
   src: string;
   height?: number;
   width?: number;
-  blurDataURL?: string | undefined; // Permite que seja string ou undefined
+  blurDataURL?: string | undefined;
   blurWidth?: number;
 }
 
@@ -25,7 +25,7 @@ export interface Product {
 }
 
 interface ProductProps {
-  product: Product; // Definindo que o parâmetro será um objeto do tipo Product
+  product: Product;
 }
 export default function Product({ product }: ProductProps) {
   return (

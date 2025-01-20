@@ -11,18 +11,17 @@ import { useSearchParams } from "next/navigation";
 const Products = () => {
   const [selectedFamilyIds, setSelectedFamilyIds] = useState<number[]>([]);
 
-  const searchParams = useSearchParams(); // Captura os parâmetros da query
-  const familiesParam = searchParams.get("families"); // Obtém o valor de "families" na query string
+  const searchParams = useSearchParams();
+  const familiesParam = searchParams.get("families");
 
   useEffect(() => {
     if (familiesParam) {
       const newSelectedFamilyIds = familiesParam.split(",").map(Number);
       setSelectedFamilyIds(newSelectedFamilyIds);
     } else {
-      // Se não houver parâmetro de filtro, reseta o estado
       setSelectedFamilyIds([]);
     }
-  }, [familiesParam]); // Reage a mudanças no parâmetro de query
+  }, [familiesParam]);
 
   const filteredProducts = selectedFamilyIds.length
     ? products.filter((product) => selectedFamilyIds.includes(product.familyId))
@@ -46,7 +45,7 @@ const Products = () => {
       </div>
       <div className="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-6 w-full justify-items-center">
         <ProductCard products={filteredProducts} />
-      </div>{" "}
+      </div>
       <PaginationDemo />
     </div>
   );
