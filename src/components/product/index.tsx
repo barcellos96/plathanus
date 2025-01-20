@@ -21,6 +21,7 @@ export interface Product {
   image: ProductImage[];
   isNew: boolean;
   name: string;
+  familyId: number;
 }
 
 interface ProductProps {

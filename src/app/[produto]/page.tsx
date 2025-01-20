@@ -3,19 +3,20 @@ import DefaultPage from "@/components/defaultPage";
 import Product from "@/components/product";
 import { Metadata } from "next";
 
-interface ProdutoPageProps {
-  searchParams: { id: string };
+//Tipagem através da documentação do nextjs
+interface Props {
+  params: Promise<{ produto: string }>;
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }
 
-// Metadados dinâmicos
 export async function generateMetadata({
   searchParams,
-}: ProdutoPageProps): Promise<Metadata> {
+}: Props): Promise<Metadata> {
   const { id } = await searchParams;
 
-  const produto = products.find((p) => p.id === id);
+  const produtData = products.find((p) => p.id === id);
 
-  if (!produto) {
+  if (!produtData) {
     return {
       title: "Produto não encontrado",
       description: "Produto solicitado não foi encontrado.",
@@ -23,14 +24,15 @@ export async function generateMetadata({
   }
 
   return {
-    title: produto.name.toUpperCase(),
+    title: produtData.name.toUpperCase(),
   };
 }
 
-// Página principal
-export default async function ProductPage({ searchParams }: ProdutoPageProps) {
+export default async function ProductPage({ searchParams }: Props) {
   const { id } = await searchParams;
+
   const product = products.find((p) => p.id === id);
+
   if (!product) {
     return (
       <DefaultPage>

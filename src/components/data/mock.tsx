@@ -16,13 +16,13 @@ import slug2 from "@/assets/products/more/slug2.png";
 
 // Mock data family
 export const family = [
-  { name: "Hidrolight Neo" },
-  { name: "Comfort Air" },
-  { name: "Ortho Recovery" },
-  { name: "Air Flex" },
-  { name: "Softline" },
-  { name: "Foot Care" },
-  { name: "Lean" },
+  { id: 1, name: "Hidrolight Neo" },
+  { id: 2, name: "Comfort Air" },
+  { id: 3, name: "Ortho Recovery" },
+  { id: 4, name: "Air Flex" },
+  { id: 5, name: "Softline" },
+  { id: 6, name: "Foot Care" },
+  { id: 7, name: "Lean" },
 ];
 
 // Mock data products
@@ -33,6 +33,7 @@ export const products = [
     code: "OR1065",
     image: [prod1, more1, more2, slug1, slug2],
     isNew: false,
+    familyId: 1,
   },
   {
     id: "OR1066-1",
@@ -40,6 +41,7 @@ export const products = [
     code: "OR1066",
     image: [prod2, more1, more2, slug1, slug2],
     isNew: true,
+    familyId: 1,
   },
   {
     id: "OR1065-2",
@@ -47,6 +49,7 @@ export const products = [
     code: "OR1065",
     image: [prod4, more1, more2, slug1, slug2],
     isNew: false,
+    familyId: 2,
   },
   {
     id: "OR1051-1",
@@ -54,6 +57,7 @@ export const products = [
     code: "OR1051",
     image: [prod3, more1, more2, slug1, slug2],
     isNew: true,
+    familyId: 3,
   },
   {
     id: "OR1065-3",
@@ -61,6 +65,7 @@ export const products = [
     code: "OR1065",
     image: [prod5, more1, more2, slug1, slug2],
     isNew: false,
+    familyId: 3,
   },
   {
     id: "OR1066-2",
@@ -68,6 +73,7 @@ export const products = [
     code: "OR1066",
     image: [prod6, more1, more2, slug1, slug2],
     isNew: true,
+    familyId: 4,
   },
   {
     id: "OR1051-2",
@@ -75,6 +81,7 @@ export const products = [
     code: "OR1051",
     image: [prod7, more1, more2, slug1, slug2],
     isNew: true,
+    familyId: 5,
   },
   {
     id: "OR1065-4",
@@ -82,6 +89,7 @@ export const products = [
     code: "OR1065",
     image: [prod8, more1, more2, slug1, slug2],
     isNew: false,
+    familyId: 6,
   },
   {
     id: "OR1066-3",
@@ -89,6 +97,7 @@ export const products = [
     code: "OR1066",
     image: [prod9, more1, more2, slug1, slug2],
     isNew: true,
+    familyId: 7,
   },
 ];
 
@@ -101,6 +110,7 @@ export const filters = [
   {
     type: "Famílias/Tecnologias",
     more: true,
+    family: family,
   },
   {
     type: "Produtos",

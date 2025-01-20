@@ -56,7 +56,6 @@ export function PaginationDemo() {
         <PaginationItem>
           <ChevronLeft
             className="cursor-pointer  hover:text-[#707372]/80"
-            href="#"
             onClick={handlePrevious}
           />
         </PaginationItem>
@@ -67,15 +66,17 @@ export function PaginationDemo() {
               <PaginationEllipsis />
             </PaginationItem>
           ) : (
-            <PaginationItem key={page}>
+            <PaginationItem key={page} className="hover:cursor-pointer">
               <PaginationLink
-                href="#"
                 className={`${
                   currentPage === page &&
-                  "border rounded-full hover:rounded-full"
+                  "border rounded-full hover:rounded-full "
                 }`}
                 isActive={currentPage === page}
-                onClick={() => setCurrentPage(Number(page))}
+                onClick={(e) => {
+                  e.preventDefault(); // Evita comportamento padrão
+                  setCurrentPage(Number(page));
+                }}
               >
                 {page}
               </PaginationLink>
@@ -86,7 +87,6 @@ export function PaginationDemo() {
         <PaginationItem>
           <ChevronRight
             className="cursor-pointer hover:text-[#707372]/80"
-            href="#"
             onClick={handleNext}
           />
         </PaginationItem>

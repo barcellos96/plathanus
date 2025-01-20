@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
-import ProductGrid from "../content/card/product/product-grid";
+import ProductCard from "../content/card/product/product-card";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Product } from ".";
 
@@ -80,7 +80,7 @@ export default function MoreProducts({ products, product }: Props) {
         className="flex py-6 mb-20 gap-6 overflow-auto lg:overflow-x-hidden"
         style={{ scrollBehavior: "smooth" }}
       >
-        <ProductGrid products={filteredProducts} />
+        <ProductCard products={filteredProducts} />
       </div>
     </div>
   );

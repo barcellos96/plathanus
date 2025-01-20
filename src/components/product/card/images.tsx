@@ -9,7 +9,6 @@ import {
 } from "lucide-react";
 import { ProductImage } from "..";
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
 
 interface Props {
   images: ProductImage[];
