@@ -12,7 +12,6 @@ interface BreadcrumbCompProps {
 }
 
 export default function BreadcrumbComp({ name }: BreadcrumbCompProps) {
-  console.log("name", name);
   return (
     <Breadcrumb>
       <BreadcrumbList className="flex items-center gap-2 text-[#4C4D4C] mt-6">

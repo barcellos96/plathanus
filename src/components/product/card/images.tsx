@@ -12,9 +12,10 @@ import { useState } from "react";
 
 interface Props {
   images: ProductImage[];
+  isNew: boolean;
 }
 
-export default function ProductGallery({ images }: Props) {
+export default function ProductGallery({ images, isNew }: Props) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isZoomed, setIsZoomed] = useState(false);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -72,6 +73,11 @@ export default function ProductGallery({ images }: Props) {
                 : undefined
             }
           />
+          {isNew && (
+            <span className="absolute top-6 left-6 bg-[#9A1A80]/60 text-white px-3 py-1 rounded-md text-sm lg:text-lg">
+              Lançamento
+            </span>
+          )}
 
           {/* Zoom Button */}
           <button

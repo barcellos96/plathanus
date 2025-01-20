@@ -33,7 +33,7 @@ export default function Product({ product }: ProductProps) {
       <BreadcrumbComp name={product.name} />
 
       <div className="flex flex-col gap-8 mt-10 2xl:flex-row">
-        <CardImages images={product.image} />
+        <CardImages isNew={product.isNew} images={product.image} />
         <CardDetails details={product} />
       </div>
 

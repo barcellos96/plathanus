@@ -124,13 +124,25 @@ export default function Footer() {
                 Nos acompanhe também nas redes sociais
               </h3>
               <div className="flex space-x-4 mt-2">
-                <a href="#" className="hover:underline">
+                <a
+                  href="https://www.instagram.com/plathanuss/?hl=pt"
+                  target="_blank"
+                  className="hover:underline"
+                >
                   <img src={insta.src} alt="icone insta" />
                 </a>
-                <a href="#" className="hover:underline">
+                <a
+                  href="https://www.facebook.com/plathanus"
+                  target="_blank"
+                  className="hover:underline"
+                >
                   <img src={facebook.src} alt="icone facebook" />
                 </a>
-                <a href="#" className="hover:underline">
+                <a
+                  href="https://www.youtube.com/@plathanustech1918"
+                  className="hover:underline"
+                  target="_blank"
+                >
                   <img src={youtube.src} alt="icone youtube" />
                 </a>
               </div>
